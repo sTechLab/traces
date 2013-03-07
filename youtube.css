@@ -1,0 +1,239 @@
+@charset "utf-8";
+body  {
+	font: 100% Arial, Helvetica, sans-serif;
+	background: #FBFBFB;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+iframe {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+h1, h2, h3, h4, h5, p, img {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+h1 {
+	margin: 12px 0px;
+	font-size: 16pt;
+	font-weight: bold;
+}
+h2 {
+	margin: 0px;
+	font-size: 14pt;
+	font-weight: bold;
+}
+h3 {
+	margin: 24px 0px;
+	color: #989898;
+	font-size: 10pt;
+	font-weight: bold;
+}
+h4 {
+	margin: 0px 0px;
+	color: #3366FF;
+	font-size: 10pt;
+	font-weight: bold;
+}
+#container p {
+	margin: 8px 0px;
+	font-size: 10pt;
+}
+.thrColFixHdr #container { 
+	width: 1044px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FBFBFB;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px;
+	padding: 0px;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	position:absolute;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+}
+/* old instructions box
+.thrColFixHdr #instructions {
+	background: #FFCC66;
+	margin: 0;
+	padding: 8px;
+	border: 0;
+}
+*/
+.thrColFixHdr #header { 
+	background: #FBFBFB; 
+	/* padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	padding: 0px;
+} 
+.thrColFixHdr #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 210px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #FBFBFB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 12px 0px 0px 0px; /* padding keeps the content of the div away from the edges */
+	margin: 0px;
+	border: 0px;
+}
+.thrColFixHdr #sidebar2 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 192px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #FBFBFB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0px; /* padding keeps the content of the div away from the edges */
+	margin: 0px;
+	border: 0px;
+}
+.thrColFixHdr #mainContent { 
+	margin: 0px 192px 100px 210px; /* the right and left margins on this div element creates the two outer columns on the sides of the page. No matter how much content the sidebar divs contain, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the sidebar spaces when the content in each sidebar ends. */
+	padding: 0px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background-color: #FFFFFF;
+	border-left: 1px solid #EAEAEA;
+	border-right: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+} 
+.thrColFixHdr #controls {
+	padding: 0px 12px 12px 12px;
+	border-bottom: 1px solid #EAEAEA;
+}
+.like_buttons {
+}
+#no_pics_summary {
+	height:74px;
+	margin-left:330px;
+}
+#male_female {
+	background-image: url(img/youtube/male_female.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	width: 110px;
+	height: 74px;
+}
+.bar {
+	background-color: #9999CC;
+	color: #000000;
+	font-weight: bold;
+	font-size: 10pt;
+	width: 34px;
+	text-align: center;
+	margin-left: 10px;
+	position:relative;
+	border-top: 1px solid #6666CC;
+	border-right: 1px solid #6666CC;
+	border-left: 1px solid #6666CC;
+}
+.bar_label{
+	position:absolute;
+	bottom:0;
+	margin-left:5px;
+}
+#average_age {
+	/* margin-left: 110px; */
+	margin-top: 50px;
+	width: 109px;
+	height: 24px;
+	color: #000000;
+	font-weight: bold;
+	font-size: 10pt;
+	padding-top: 4px;
+	background-image: url(img/youtube/average_age.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-align: right;
+}
+.pad_right {
+	padding-right:4px;
+}
+.thrColFixHdr #comments {
+	padding: 12px;
+
+}
+.comment_area {
+	margin: 12px 0px;
+}
+
+.comment_text {
+	margin-left: 62px;
+}
+
+.thrColFixHdr #footer { 
+	/* padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#F2F2F2;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+} 
+.thrColFixHdr #footer p {
+	margin: 0px; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+img.button {
+	cursor: pointer;
+}
+
+/* Modal windows */
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:9000;
+  background-color:#000000;
+  display:none;
+}
+  
+#box .popup {
+  position:fixed;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+}
+
+#box a.close{
+	text-decoration: none;
+	color: #CC3333;
+	padding: 10px 4px;
+}
+
+#instructions {
+	width:300px; 
+	padding-bottom:20px;
+	background-color: #FFCC66;
+}
+#instructions p {
+	font-size:10pt;
+	padding:10px; 
+}
+#audience_label{
+	margin:0;
+	padding:0;
+}
+.comment_commit{
+	padding: 8px 2px 8px 2px;
+	width:400px;
+	border: 1px solid #9999CC;
+	font-size:10pt;
+}
